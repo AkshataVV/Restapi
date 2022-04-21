@@ -1,7 +1,7 @@
 from flask import Flask,redirect, url_for, render_template, request, jsonify
 app = Flask(__name__)
 
-@app.route("/", methods=["POST", "GET"])
+@app.route("/", methods=["POST"])
 def home():
      if request.method == "POST":
         message = request.form["msg"]
